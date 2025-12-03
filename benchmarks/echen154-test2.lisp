@@ -1,7 +1,7 @@
 (define (nested-ifs x y z)
     (if (< x y)
     (if (< y z)
-    (+ x y z)
+    (+ x (+ y z))
     (if (= y z)
     (* y 2)
     (- y z)))

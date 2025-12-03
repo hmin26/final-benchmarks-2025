@@ -5,5 +5,5 @@
     (let ((a (fcopy 1 2)))
         (let ((b (fcopy 1 2)))
             (let ((c (fcopy 2 1)))
-                (let ((d (f (read-num) (read-num))))
+                (let ((d (f 1 1)))
                     (print (pair b c)))))))

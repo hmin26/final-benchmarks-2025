@@ -1,0 +1,5 @@
+(define (f x) (+ x 2))
+(define (g x) (add1 (f x)))
+(let ((x 5))
+ (+ (f x) (g x))
+)

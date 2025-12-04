@@ -1,10 +1,9 @@
-(define (run-loop n)
+(define (run-loop n acc)
   (if (= n 0)
-      0
+      acc
       (let ((x 10))
         (let ((y 20))
           (let ((z (+ x y)))
-            (+ (+ z z)
-               (run-loop (- n 1))))))))
+            (run-loop (- n 1) (+ acc (+ z z))))))))
 
-(print (run-loop 10000000))
+(print (run-loop 100000 0))
